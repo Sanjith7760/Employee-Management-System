@@ -1,0 +1,16 @@
+-- 🏢 Employee Table Creation Script
+-- This SQL script creates the 'employee' table in the 'kodnest' database.
+-- It includes fields for employee details such as name, salary, phone, email, and type.
+
+CREATE DATABASE "kodnest";
+USE "kodnest";
+
+CREATE TABLE `employee` (
+  `id` INT NOT NULL AUTO_INCREMENT,  -- 🔑 Unique identifier for each employee
+  `name` VARCHAR(45) NULL,            -- 🧑 Employee's name
+  `salary` INT NULL,                   -- 💰 Employee's salary
+  `phone` INT NULL,                    -- 📞 Employee's phone number
+  `email` VARCHAR(45) NULL,            -- 📧 Employee's email address
+  `type` VARCHAR(45) NULL,             -- 🏷️ Type of employee (e.g., full-time, part-time)
+  PRIMARY KEY (`id`)                   -- 🔒 Setting 'id' as the primary key
+);
